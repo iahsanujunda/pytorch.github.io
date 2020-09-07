@@ -158,7 +158,7 @@
               
               
                 <div class="version">
-                  <a href='http://pytorch.org/docs/versions.html'>1.7.0a0+fa9ae67 &#x25BC</a>
+                  <a href='http://pytorch.org/docs/versions.html'>1.7.0a0+f253c20 &#x25BC</a>
                 </div>
               
             
@@ -227,9 +227,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../amp.html">torch.cuda.amp</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fft.html">torch.fft</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../futures.html">torch.futures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../jit.html">torch.jit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linalg.html">torch.linalg</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../nn.init.html">torch.nn.init</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../onnx.html">torch.onnx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../optim.html">torch.optim</a></li>
@@ -526,11 +528,15 @@
     <span class="k">if</span> <span class="n">qscheme</span> <span class="o">==</span> <span class="n">torch</span><span class="o">.</span><span class="n">per_tensor_affine</span><span class="p">:</span>
         <span class="n">_</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">zero_point</span> <span class="o">=</span> <span class="n">quantizer_params</span>
         <span class="n">tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_empty_affine_quantized</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale</span><span class="p">,</span> <span class="n">zero_point</span><span class="o">=</span><span class="n">zero_point</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">storage</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">qscheme</span> <span class="o">==</span> <span class="n">torch</span><span class="o">.</span><span class="n">per_channel_affine</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">qscheme</span> <span class="ow">in</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">per_channel_affine</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">per_channel_affine_float_qparams</span><span class="p">):</span>
         <span class="n">_</span><span class="p">,</span> <span class="n">scales</span><span class="p">,</span> <span class="n">zero_points</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="n">quantizer_params</span>
         <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">scales</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="ow">and</span> <span class="nb">type</span><span class="p">(</span><span class="n">zero_points</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span><span class="p">:</span>
-            <span class="n">scales</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">scales</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">double</span><span class="p">)</span>
-            <span class="n">zero_points</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">zero_points</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">long</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">qscheme</span> <span class="o">==</span> <span class="n">torch</span><span class="o">.</span><span class="n">per_channel_affine</span><span class="p">:</span>
+                <span class="n">scales</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">scales</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">double</span><span class="p">)</span>
+                <span class="n">zero_points</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">zero_points</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">long</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">scales</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">scales</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float</span><span class="p">)</span>
+                <span class="n">zero_points</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">zero_points</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float</span><span class="p">)</span>
         <span class="n">tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">_empty_per_channel_affine_quantized</span><span class="p">(</span>
             <span class="n">size</span><span class="p">,</span> <span class="n">scales</span><span class="o">=</span><span class="n">scales</span><span class="p">,</span> <span class="n">zero_points</span><span class="o">=</span><span class="n">zero_points</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">storage</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
@@ -759,6 +765,10 @@
             <span class="c1"># makes stack traces unreadable. It will not be changed in Python</span>
             <span class="c1"># (https://bugs.python.org/issue2651), so we work around it.</span>
             <span class="n">msg</span> <span class="o">=</span> <span class="n">KeyErrorMessage</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">exc_type</span><span class="p">,</span> <span class="s2">&quot;message&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
+            <span class="c1"># Some exceptions have first argument as non-str but explicitly</span>
+            <span class="c1"># have message field</span>
+            <span class="k">raise</span> <span class="bp">self</span><span class="o">.</span><span class="n">exc_type</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="n">msg</span><span class="p">)</span>
         <span class="k">raise</span> <span class="bp">self</span><span class="o">.</span><span class="n">exc_type</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
 

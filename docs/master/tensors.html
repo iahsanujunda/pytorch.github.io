@@ -159,7 +159,7 @@
               
               
                 <div class="version">
-                  <a href='http://pytorch.org/docs/versions.html'>1.7.0a0+fa9ae67 &#x25BC</a>
+                  <a href='http://pytorch.org/docs/versions.html'>1.7.0a0+f253c20 &#x25BC</a>
                 </div>
               
             
@@ -228,9 +228,11 @@
 <li class="toctree-l1"><a class="reference internal" href="amp.html">torch.cuda.amp</a></li>
 <li class="toctree-l1"><a class="reference internal" href="distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fft.html">torch.fft</a></li>
 <li class="toctree-l1"><a class="reference internal" href="futures.html">torch.futures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jit.html">torch.jit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linalg.html">torch.linalg</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nn.init.html">torch.nn.init</a></li>
 <li class="toctree-l1"><a class="reference internal" href="onnx.html">torch.onnx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="optim.html">torch.optim</a></li>
@@ -830,6 +832,18 @@ Alias for <a class="reference internal" href="#torch.Tensor.abs_" title="torch.T
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.arccos">
+<code class="sig-name descname">arccos</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.arccos" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.arccos.html#torch.arccos" title="torch.arccos"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.arccos()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.arccos_">
+<code class="sig-name descname">arccos_</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.arccos_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.arccos" title="torch.Tensor.arccos"><code class="xref py py-meth docutils literal notranslate"><span class="pre">arccos()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.add">
 <code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param">other</em>, <em class="sig-param">*</em>, <em class="sig-param">alpha=1</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.add" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a scalar or tensor to <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code> tensor. If both <code class="xref py py-attr docutils literal notranslate"><span class="pre">alpha</span></code>
@@ -926,6 +940,18 @@ tensor</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.amax">
+<code class="sig-name descname">amax</code><span class="sig-paren">(</span><em class="sig-param">dim=None</em>, <em class="sig-param">keepdim=False</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.amax" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.amax.html#torch.amax" title="torch.amax"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.amax()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.amin">
+<code class="sig-name descname">amin</code><span class="sig-paren">(</span><em class="sig-param">dim=None</em>, <em class="sig-param">keepdim=False</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.amin" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.amin.html#torch.amin" title="torch.amin"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.amin()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.angle">
 <code class="sig-name descname">angle</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.angle" title="Permalink to this definition">¶</a></dt>
 <dd><p>See <a class="reference internal" href="generated/torch.angle.html#torch.angle" title="torch.angle"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.angle()</span></code></a></p>
@@ -974,6 +1000,18 @@ sections that require high performance.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.arcsin">
+<code class="sig-name descname">arcsin</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.arcsin" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.arcsin.html#torch.arcsin" title="torch.arcsin"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.arcsin()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.arcsin_">
+<code class="sig-name descname">arcsin_</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.arcsin_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.arcsin" title="torch.Tensor.arcsin"><code class="xref py py-meth docutils literal notranslate"><span class="pre">arcsin()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.as_strided">
 <code class="sig-name descname">as_strided</code><span class="sig-paren">(</span><em class="sig-param">size</em>, <em class="sig-param">stride</em>, <em class="sig-param">storage_offset=0</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.as_strided" title="Permalink to this definition">¶</a></dt>
 <dd><p>See <a class="reference internal" href="generated/torch.as_strided.html#torch.as_strided" title="torch.as_strided"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.as_strided()</span></code></a></p>
@@ -986,6 +1024,24 @@ sections that require high performance.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.atan_">
+<code class="sig-name descname">atan_</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.atan_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.atan" title="torch.Tensor.atan"><code class="xref py py-meth docutils literal notranslate"><span class="pre">atan()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.arctan">
+<code class="sig-name descname">arctan</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.arctan" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.arctan.html#torch.arctan" title="torch.arctan"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.arctan()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.arctan_">
+<code class="sig-name descname">arctan_</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.arctan_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.arctan" title="torch.Tensor.arctan"><code class="xref py py-meth docutils literal notranslate"><span class="pre">arctan()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.atan2">
 <code class="sig-name descname">atan2</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.atan2" title="Permalink to this definition">¶</a></dt>
 <dd><p>See <a class="reference internal" href="generated/torch.atan2.html#torch.atan2" title="torch.atan2"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.atan2()</span></code></a></p>
@@ -995,12 +1051,6 @@ sections that require high performance.</p>
 <dt id="torch.Tensor.atan2_">
 <code class="sig-name descname">atan2_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.atan2_" title="Permalink to this definition">¶</a></dt>
 <dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.atan2" title="torch.Tensor.atan2"><code class="xref py py-meth docutils literal notranslate"><span class="pre">atan2()</span></code></a></p>
-</dd></dl>
-
-<dl class="method">
-<dt id="torch.Tensor.atan_">
-<code class="sig-name descname">atan_</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.atan_" title="Permalink to this definition">¶</a></dt>
-<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.atan" title="torch.Tensor.atan"><code class="xref py py-meth docutils literal notranslate"><span class="pre">atan()</span></code></a></p>
 </dd></dl>
 
 <dl class="method">
@@ -1081,7 +1131,7 @@ floating point <code class="docutils literal notranslate"><span class="pre">dtyp
 <code class="sig-name descname">bernoulli_</code><span class="sig-paren">(</span><em class="sig-param">p_tensor</em>, <em class="sig-param">*</em>, <em class="sig-param">generator=None</em><span class="sig-paren">)</span> &#x2192; Tensor</dt>
 <dd><p><code class="xref py py-attr docutils literal notranslate"><span class="pre">p_tensor</span></code> should be a tensor containing probabilities to be used for
 drawing the binary random number.</p>
-<p>The <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext>i</mtext><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\text{i}^{th}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.906868em;vertical-align:0em;"></span><span class="mord"><span class="mord text"><span class="mord">i</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.906868em;"><span style="top:-3.12076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">t</span><span class="mord mathdefault mtight">h</span></span></span></span></span></span></span></span></span></span></span></span>
+<p>The <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext>i</mtext><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\text{i}^{th}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.906868em;vertical-align:0em;"></span><span class="mord"><span class="mord text"><span class="mord">i</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.906868em;"><span style="top:-3.12076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">h</span></span></span></span></span></span></span></span></span></span></span></span>
 
 </span> element of <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code> tensor will be set to a
 value sampled from <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Bernoulli</mtext><mo stretchy="false">(</mo><mtext mathvariant="monospace">p_tensor[i]</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{Bernoulli}(\texttt{p\_tensor[i]})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Bernoulli</span></span><span class="mopen">(</span><span class="mord text"><span class="mord texttt">p_tensor[i]</span></span><span class="mclose">)</span></span></span></span>
@@ -1195,7 +1245,7 @@ returned Tensor. Default: <code class="docutils literal notranslate"><span class
 <code class="sig-name descname">cauchy_</code><span class="sig-paren">(</span><em class="sig-param">median=0</em>, <em class="sig-param">sigma=1</em>, <em class="sig-param">*</em>, <em class="sig-param">generator=None</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.cauchy_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fills the tensor with numbers drawn from the Cauchy distribution:</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mi>π</mi></mfrac><mfrac><mi>σ</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mtext>median</mtext><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(x) = \dfrac{1}{\pi} \dfrac{\sigma}{(x - \text{median})^2 + \sigma^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.25744em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.10756em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord text"><span class="mord">median</span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mi>π</mi></mfrac><mfrac><mi>σ</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mtext>median</mtext><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(x) = \dfrac{1}{\pi} \dfrac{\sigma}{(x - \text{median})^2 + \sigma^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.25744em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.10756em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord text"><span class="mord">median</span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
 
 </div></dd></dl>
 
@@ -1260,21 +1310,21 @@ returned Tensor. Default: <code class="docutils literal notranslate"><span class
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.clip">
+<code class="sig-name descname">clip</code><span class="sig-paren">(</span><em class="sig-param">min</em>, <em class="sig-param">max</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.clip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for <a class="reference internal" href="#torch.Tensor.clamp" title="torch.Tensor.clamp"><code class="xref py py-meth docutils literal notranslate"><span class="pre">clamp()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.clip_">
+<code class="sig-name descname">clip_</code><span class="sig-paren">(</span><em class="sig-param">min</em>, <em class="sig-param">max</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.clip_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for <a class="reference internal" href="#torch.Tensor.clamp_" title="torch.Tensor.clamp_"><code class="xref py py-meth docutils literal notranslate"><span class="pre">clamp_()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.clone">
-<code class="sig-name descname">clone</code><span class="sig-paren">(</span><em class="sig-param">memory_format=torch.preserve_format</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.clone" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns a copy of the <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code> tensor. The copy has the same size and data
-type as <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Unlike <cite>copy_()</cite>, this function is recorded in the computation graph. Gradients
-propagating to the cloned tensor will propagate to the original tensor.</p>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>memory_format</strong> (<a class="reference internal" href="tensor_attributes.html#torch.torch.memory_format" title="torch.torch.memory_format"><code class="xref py py-class docutils literal notranslate"><span class="pre">torch.memory_format</span></code></a>, optional) – the desired memory format of
-returned Tensor. Default: <code class="docutils literal notranslate"><span class="pre">torch.preserve_format</span></code>.</p>
-</dd>
-</dl>
+<code class="sig-name descname">clone</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">memory_format=torch.preserve_format</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.clone" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.clone.html#torch.clone" title="torch.clone"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.clone()</span></code></a></p>
 </dd></dl>
 
 <dl class="method">
@@ -1357,6 +1407,20 @@ cases, this argument has no effect.</p></li>
 <dt id="torch.Tensor.acosh_">
 <code class="sig-name descname">acosh_</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.acosh_" title="Permalink to this definition">¶</a></dt>
 <dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.acosh" title="torch.Tensor.acosh"><code class="xref py py-meth docutils literal notranslate"><span class="pre">acosh()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.arccosh">
+<code class="sig-name descname">arccosh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torch.Tensor.arccosh" title="Permalink to this definition">¶</a></dt>
+<dd><p>acosh() -&gt; Tensor</p>
+<p>See <a class="reference internal" href="generated/torch.arccosh.html#torch.arccosh" title="torch.arccosh"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.arccosh()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.arccosh_">
+<code class="sig-name descname">arccosh_</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torch.Tensor.arccosh_" title="Permalink to this definition">¶</a></dt>
+<dd><p>acosh_() -&gt; Tensor</p>
+<p>In-place version of <a class="reference internal" href="#torch.Tensor.arccosh" title="torch.Tensor.arccosh"><code class="xref py py-meth docutils literal notranslate"><span class="pre">arccosh()</span></code></a></p>
 </dd></dl>
 
 <dl class="method">
@@ -1769,9 +1833,21 @@ as <code class="xref py py-attr docutils literal notranslate"><span class="pre">
 <code class="sig-name descname">exponential_</code><span class="sig-paren">(</span><em class="sig-param">lambd=1</em>, <em class="sig-param">*</em>, <em class="sig-param">generator=None</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.exponential_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fills <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code> tensor with elements drawn from the exponential distribution:</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>λ</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">f(x) = \lambda e^{-\lambda x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8991079999999999em;vertical-align:0em;"></span><span class="mord mathdefault">λ</span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathdefault mtight">λ</span><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span></span></span></span></span></span>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>λ</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">f(x) = \lambda e^{-\lambda x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8991079999999999em;vertical-align:0em;"></span><span class="mord mathnormal">λ</span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight">λ</span><span class="mord mathnormal mtight">x</span></span></span></span></span></span></span></span></span></span></span></span></span>
 
 </div></dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.fix">
+<code class="sig-name descname">fix</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.fix" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.fix.html#torch.fix" title="torch.fix"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.fix()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.fix_">
+<code class="sig-name descname">fix_</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.fix_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.fix" title="torch.Tensor.fix"><code class="xref py py-meth docutils literal notranslate"><span class="pre">fix()</span></code></a></p>
+</dd></dl>
 
 <dl class="method">
 <dt id="torch.Tensor.fft">
@@ -1890,13 +1966,25 @@ returned Tensor. Default: <code class="docutils literal notranslate"><span class
 <dl class="method">
 <dt id="torch.Tensor.ge">
 <code class="sig-name descname">ge</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.ge" title="Permalink to this definition">¶</a></dt>
-<dd><p>See <a class="reference internal" href="generated/torch.ge.html#torch.ge" title="torch.ge"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.ge()</span></code></a></p>
+<dd><p>See <a class="reference internal" href="generated/torch.ge.html#torch.ge" title="torch.ge"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.ge()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="torch.Tensor.ge_">
 <code class="sig-name descname">ge_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.ge_" title="Permalink to this definition">¶</a></dt>
-<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.ge" title="torch.Tensor.ge"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ge()</span></code></a></p>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.ge" title="torch.Tensor.ge"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ge()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.greater_equal">
+<code class="sig-name descname">greater_equal</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.greater_equal" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.greater_equal.html#torch.greater_equal" title="torch.greater_equal"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.greater_equal()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.greater_equal_">
+<code class="sig-name descname">greater_equal_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.greater_equal_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.greater_equal" title="torch.Tensor.greater_equal"><code class="xref py py-meth docutils literal notranslate"><span class="pre">greater_equal()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1904,7 +1992,7 @@ returned Tensor. Default: <code class="docutils literal notranslate"><span class
 <code class="sig-name descname">geometric_</code><span class="sig-paren">(</span><em class="sig-param">p</em>, <em class="sig-param">*</em>, <em class="sig-param">generator=None</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.geometric_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fills <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code> tensor with elements drawn from the geometric distribution:</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mi>p</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(X=k) = p^{k - 1} (1 - p)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.149108em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">p</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">p</span><span class="mclose">)</span></span></span></span></span>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mi>p</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(X=k) = p^{k - 1} (1 - p)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.149108em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mclose">)</span></span></span></span></span>
 
 </div></dd></dl>
 
@@ -1937,13 +2025,25 @@ For CPU tensors, an error is thrown.</p>
 <dl class="method">
 <dt id="torch.Tensor.gt">
 <code class="sig-name descname">gt</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.gt" title="Permalink to this definition">¶</a></dt>
-<dd><p>See <a class="reference internal" href="generated/torch.gt.html#torch.gt" title="torch.gt"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.gt()</span></code></a></p>
+<dd><p>See <a class="reference internal" href="generated/torch.gt.html#torch.gt" title="torch.gt"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.gt()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="torch.Tensor.gt_">
 <code class="sig-name descname">gt_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.gt_" title="Permalink to this definition">¶</a></dt>
-<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.gt" title="torch.Tensor.gt"><code class="xref py py-meth docutils literal notranslate"><span class="pre">gt()</span></code></a></p>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.gt" title="torch.Tensor.gt"><code class="xref py py-meth docutils literal notranslate"><span class="pre">gt()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.greater">
+<code class="sig-name descname">greater</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.greater" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.greater.html#torch.greater" title="torch.greater"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.greater()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.greater_">
+<code class="sig-name descname">greater_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.greater_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.greater" title="torch.Tensor.greater"><code class="xref py py-meth docutils literal notranslate"><span class="pre">greater()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1965,9 +2065,39 @@ returned Tensor. Default: <code class="docutils literal notranslate"><span class
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.heaviside">
+<code class="sig-name descname">heaviside</code><span class="sig-paren">(</span><em class="sig-param">values</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.heaviside" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.heaviside.html#torch.heaviside" title="torch.heaviside"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.heaviside()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.histc">
 <code class="sig-name descname">histc</code><span class="sig-paren">(</span><em class="sig-param">bins=100</em>, <em class="sig-param">min=0</em>, <em class="sig-param">max=0</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.histc" title="Permalink to this definition">¶</a></dt>
 <dd><p>See <a class="reference internal" href="generated/torch.histc.html#torch.histc" title="torch.histc"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.histc()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.hypot">
+<code class="sig-name descname">hypot</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.hypot" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.hypot.html#torch.hypot" title="torch.hypot"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.hypot()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.hypot_">
+<code class="sig-name descname">hypot_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.hypot_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.hypot" title="torch.Tensor.hypot"><code class="xref py py-meth docutils literal notranslate"><span class="pre">hypot()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.i0">
+<code class="sig-name descname">i0</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.i0" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.i0.html#torch.i0" title="torch.i0"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.i0()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.i0_">
+<code class="sig-name descname">i0_</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.i0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.i0" title="torch.Tensor.i0"><code class="xref py py-meth docutils literal notranslate"><span class="pre">i0()</span></code></a></p>
 </dd></dl>
 
 <dl class="method">
@@ -2286,8 +2416,8 @@ To get <a class="reference internal" href="autograd.html#torch.Tensor.grad" titl
 <dl class="method">
 <dt id="torch.Tensor.is_set_to">
 <code class="sig-name descname">is_set_to</code><span class="sig-paren">(</span><em class="sig-param">tensor</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#torch.Tensor.is_set_to" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns True if this object refers to the same <code class="docutils literal notranslate"><span class="pre">THTensor</span></code> object from the
-Torch C API as the given tensor.</p>
+<dd><p>Returns True if both tensors are pointing to the exact same memory (same
+storage, offset, size and stride).</p>
 </dd></dl>
 
 <dl class="method">
@@ -2355,13 +2485,25 @@ for tensors with one element. For other cases, see <a class="reference internal"
 <dl class="method">
 <dt id="torch.Tensor.le">
 <code class="sig-name descname">le</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.le" title="Permalink to this definition">¶</a></dt>
-<dd><p>See <a class="reference internal" href="generated/torch.le.html#torch.le" title="torch.le"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.le()</span></code></a></p>
+<dd><p>See <a class="reference internal" href="generated/torch.le.html#torch.le" title="torch.le"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.le()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="torch.Tensor.le_">
 <code class="sig-name descname">le_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.le_" title="Permalink to this definition">¶</a></dt>
-<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.le" title="torch.Tensor.le"><code class="xref py py-meth docutils literal notranslate"><span class="pre">le()</span></code></a></p>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.le" title="torch.Tensor.le"><code class="xref py py-meth docutils literal notranslate"><span class="pre">le()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.less_equal">
+<code class="sig-name descname">less_equal</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.less_equal" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.less_equal.html#torch.less_equal" title="torch.less_equal"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.less_equal()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.less_equal_">
+<code class="sig-name descname">less_equal_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.less_equal_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.less_equal" title="torch.Tensor.less_equal"><code class="xref py py-meth docutils literal notranslate"><span class="pre">less_equal()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -2446,16 +2588,16 @@ for tensors with one element. For other cases, see <a class="reference internal"
 <dt id="torch.Tensor.log_normal_">
 <code class="sig-name descname">log_normal_</code><span class="sig-paren">(</span><em class="sig-param">mean=1</em>, <em class="sig-param">std=2</em>, <em class="sig-param">*</em>, <em class="sig-param">generator=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torch.Tensor.log_normal_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fills <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code> tensor with numbers samples from the log-normal distribution
-parameterized by the given mean <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">μ</span></span></span></span>
+parameterized by the given mean <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">μ</span></span></span></span>
 
 </span> and standard deviation
-<span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span></span></span></span>
+<span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span></span></span></span>
 
 </span>. Note that <a class="reference internal" href="generated/torch.mean.html#torch.mean" title="torch.mean"><code class="xref py py-attr docutils literal notranslate"><span class="pre">mean</span></code></a> and <a class="reference internal" href="generated/torch.std.html#torch.std" title="torch.std"><code class="xref py py-attr docutils literal notranslate"><span class="pre">std</span></code></a> are the mean and
 standard deviation of the underlying normal distribution, and not of the
 returned distribution:</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mi>σ</mi><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow></mfrac><mtext> </mtext><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mrow><mo stretchy="false">(</mo><mi>ln</mi><mo>⁡</mo><mi>x</mi><mo>−</mo><mi>μ</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><mrow><mn>2</mn><msup><mi>σ</mi><mn>2</mn></msup></mrow></mfrac></mrow></msup></mrow><annotation encoding="application/x-tex">f(x) = \dfrac{1}{x \sigma \sqrt{2\pi}}\ e^{-\frac{(\ln x - \mu)^2}{2\sigma^2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.25909em;vertical-align:-0.93em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.2027799999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.90722em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span><span style="top:-2.86722em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mi>σ</mi><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow></mfrac><mtext> </mtext><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mrow><mo stretchy="false">(</mo><mi>ln</mi><mo>⁡</mo><mi>x</mi><mo>−</mo><mi>μ</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><mrow><mn>2</mn><msup><mi>σ</mi><mn>2</mn></msup></mrow></mfrac></mrow></msup></mrow><annotation encoding="application/x-tex">f(x) = \dfrac{1}{x \sigma \sqrt{2\pi}}\ e^{-\frac{(\ln x - \mu)^2}{2\sigma^2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.25909em;vertical-align:-0.93em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.2027799999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.90722em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span><span style="top:-2.86722em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
 c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
 c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
 c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
@@ -2466,7 +2608,7 @@ c5.3,-9.3,12,-14,20,-14
 H400000v40H845.2724
 s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
 c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
-M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.13278em;"><span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.93em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace"> </span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.32909em;"><span style="top:-3.4534200000000004em;margin-right:0.05em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size3 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.250957142857143em;"><span style="top:-2.5061857142857145em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9384399999999999em;"><span style="top:-2.93844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.2255000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.5020714285714285em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mop mtight"><span class="mtight">l</span><span class="mtight">n</span></span><span class="mspace mtight" style="margin-right:0.24533333333333335em;"></span><span class="mord mathdefault mtight">x</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight">μ</span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.04844em;"><span style="top:-3.04844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.49381428571428565em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.13278em;"><span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.93em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace"> </span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.32909em;"><span style="top:-3.4534200000000004em;margin-right:0.05em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size3 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.250957142857143em;"><span style="top:-2.5061857142857145em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9384399999999999em;"><span style="top:-2.93844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.2255000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.5020714285714285em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mop mtight"><span class="mtight">l</span><span class="mtight">n</span></span><span class="mspace mtight" style="margin-right:0.24533333333333335em;"></span><span class="mord mathnormal mtight">x</span><span class="mbin mtight">−</span><span class="mord mathnormal mtight">μ</span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.04844em;"><span style="top:-3.04844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.49381428571428565em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
 
 </div></dd></dl>
 
@@ -2569,13 +2711,26 @@ returned Tensor. Default: <code class="docutils literal notranslate"><span class
 <dl class="method">
 <dt id="torch.Tensor.lt">
 <code class="sig-name descname">lt</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.lt" title="Permalink to this definition">¶</a></dt>
-<dd><p>See <a class="reference internal" href="generated/torch.lt.html#torch.lt" title="torch.lt"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.lt()</span></code></a></p>
+<dd><p>See <a class="reference internal" href="generated/torch.lt.html#torch.lt" title="torch.lt"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.lt()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="torch.Tensor.lt_">
 <code class="sig-name descname">lt_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.lt_" title="Permalink to this definition">¶</a></dt>
-<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.lt" title="torch.Tensor.lt"><code class="xref py py-meth docutils literal notranslate"><span class="pre">lt()</span></code></a></p>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.lt" title="torch.Tensor.lt"><code class="xref py py-meth docutils literal notranslate"><span class="pre">lt()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.less">
+<code class="sig-name descname">less</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torch.Tensor.less" title="Permalink to this definition">¶</a></dt>
+<dd><p>lt(other) -&gt; Tensor</p>
+<p>See <a class="reference internal" href="generated/torch.less.html#torch.less" title="torch.less"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.less()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.less_">
+<code class="sig-name descname">less_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.less_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.less" title="torch.Tensor.less"><code class="xref py py-meth docutils literal notranslate"><span class="pre">less()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -2681,9 +2836,21 @@ tensor.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.matrix_exp">
+<code class="sig-name descname">matrix_exp</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.matrix_exp" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.matrix_exp.html#torch.matrix_exp" title="torch.matrix_exp"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.matrix_exp()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.max">
 <code class="sig-name descname">max</code><span class="sig-paren">(</span><em class="sig-param">dim=None</em>, <em class="sig-param">keepdim=False) -&gt; Tensor or (Tensor</em>, <em class="sig-param">Tensor</em><span class="sig-paren">)</span><a class="headerlink" href="#torch.Tensor.max" title="Permalink to this definition">¶</a></dt>
 <dd><p>See <a class="reference internal" href="generated/torch.max.html#torch.max" title="torch.max"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.max()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.maximum">
+<code class="sig-name descname">maximum</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.maximum" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.maximum.html#torch.maximum" title="torch.maximum"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.maximum()</span></code></a></p>
 </dd></dl>
 
 <dl class="method">
@@ -2705,6 +2872,12 @@ tensor.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.minimum">
+<code class="sig-name descname">minimum</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.minimum" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.minimum.html#torch.minimum" title="torch.minimum"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.minimum()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.mm">
 <code class="sig-name descname">mm</code><span class="sig-paren">(</span><em class="sig-param">mat2</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.mm" title="Permalink to this definition">¶</a></dt>
 <dd><p>See <a class="reference internal" href="generated/torch.mm.html#torch.mm" title="torch.mm"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.mm()</span></code></a></p>
@@ -2714,6 +2887,12 @@ tensor.</p>
 <dt id="torch.Tensor.mode">
 <code class="sig-name descname">mode</code><span class="sig-paren">(</span><em class="sig-param">dim=None</em>, <em class="sig-param">keepdim=False) -&gt; (Tensor</em>, <em class="sig-param">LongTensor</em><span class="sig-paren">)</span><a class="headerlink" href="#torch.Tensor.mode" title="Permalink to this definition">¶</a></dt>
 <dd><p>See <a class="reference internal" href="generated/torch.mode.html#torch.mode" title="torch.mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.mode()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.movedim">
+<code class="sig-name descname">movedim</code><span class="sig-paren">(</span><em class="sig-param">source</em>, <em class="sig-param">destination</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.movedim" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.movedim.html#torch.movedim" title="torch.movedim"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.movedim()</span></code></a></p>
 </dd></dl>
 
 <dl class="method">
@@ -2753,6 +2932,12 @@ tensor.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.nansum">
+<code class="sig-name descname">nansum</code><span class="sig-paren">(</span><em class="sig-param">dim=None</em>, <em class="sig-param">keepdim=False</em>, <em class="sig-param">dtype=None</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.nansum" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.nansum.html#torch.nansum" title="torch.nansum"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.nansum()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.narrow">
 <code class="sig-name descname">narrow</code><span class="sig-paren">(</span><em class="sig-param">dimension</em>, <em class="sig-param">start</em>, <em class="sig-param">length</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.narrow" title="Permalink to this definition">¶</a></dt>
 <dd><p>See <a class="reference internal" href="generated/torch.narrow.html#torch.narrow" title="torch.narrow"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.narrow()</span></code></a></p>
@@ -2788,13 +2973,25 @@ relevant dense dimension narrowed, and <code class="docutils literal notranslate
 <dl class="method">
 <dt id="torch.Tensor.ne">
 <code class="sig-name descname">ne</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.ne" title="Permalink to this definition">¶</a></dt>
-<dd><p>See <a class="reference internal" href="generated/torch.ne.html#torch.ne" title="torch.ne"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.ne()</span></code></a></p>
+<dd><p>See <a class="reference internal" href="generated/torch.ne.html#torch.ne" title="torch.ne"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.ne()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="torch.Tensor.ne_">
 <code class="sig-name descname">ne_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.ne_" title="Permalink to this definition">¶</a></dt>
-<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.ne" title="torch.Tensor.ne"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ne()</span></code></a></p>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.ne" title="torch.Tensor.ne"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ne()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.not_equal">
+<code class="sig-name descname">not_equal</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.not_equal" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.not_equal.html#torch.not_equal" title="torch.not_equal"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.not_equal()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.not_equal_">
+<code class="sig-name descname">not_equal_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.not_equal_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.not_equal" title="torch.Tensor.not_equal"><code class="xref py py-meth docutils literal notranslate"><span class="pre">not_equal()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -2810,9 +3007,33 @@ relevant dense dimension narrowed, and <code class="docutils literal notranslate
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.negative">
+<code class="sig-name descname">negative</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.negative" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.negative.html#torch.negative" title="torch.negative"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.negative()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.negative_">
+<code class="sig-name descname">negative_</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.negative_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.negative" title="torch.Tensor.negative"><code class="xref py py-meth docutils literal notranslate"><span class="pre">negative()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.nelement">
 <code class="sig-name descname">nelement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#torch.Tensor.nelement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alias for <a class="reference internal" href="#torch.Tensor.numel" title="torch.Tensor.numel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">numel()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.nextafter">
+<code class="sig-name descname">nextafter</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.nextafter" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.nextafter.html#torch.nextafter" title="torch.nextafter"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.nextafter()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.nextafter_">
+<code class="sig-name descname">nextafter_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.nextafter_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.nextafter" title="torch.Tensor.nextafter"><code class="xref py py-meth docutils literal notranslate"><span class="pre">nextafter()</span></code></a></p>
 </dd></dl>
 
 <dl class="method">
@@ -2858,6 +3079,12 @@ returned <code class="xref py py-class docutils literal notranslate"><span class
 <dt id="torch.Tensor.ormqr">
 <code class="sig-name descname">ormqr</code><span class="sig-paren">(</span><em class="sig-param">input2</em>, <em class="sig-param">input3</em>, <em class="sig-param">left=True</em>, <em class="sig-param">transpose=False</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.ormqr" title="Permalink to this definition">¶</a></dt>
 <dd><p>See <a class="reference internal" href="generated/torch.ormqr.html#torch.ormqr" title="torch.ormqr"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.ormqr()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.outer">
+<code class="sig-name descname">outer</code><span class="sig-paren">(</span><em class="sig-param">vec2</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.outer" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.outer.html#torch.outer" title="torch.outer"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.outer()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -2959,6 +3186,12 @@ contain duplicate elements.</p>
 <dt id="torch.Tensor.qscheme">
 <code class="sig-name descname">qscheme</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; torch.qscheme<a class="headerlink" href="#torch.Tensor.qscheme" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the quantization scheme of a given QTensor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.quantile">
+<code class="sig-name descname">quantile</code><span class="sig-paren">(</span><em class="sig-param">q</em>, <em class="sig-param">dim=None</em>, <em class="sig-param">keepdim=False</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.quantile" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.quantile.html#torch.quantile" title="torch.quantile"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.quantile()</span></code></a></p>
 </dd></dl>
 
 <dl class="method">
@@ -3584,6 +3817,18 @@ returned Tensor. Default: <code class="docutils literal notranslate"><span class
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.arcsinh">
+<code class="sig-name descname">arcsinh</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.arcsinh" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.arcsinh.html#torch.arcsinh" title="torch.arcsinh"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.arcsinh()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.arcsinh_">
+<code class="sig-name descname">arcsinh_</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.arcsinh_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.arcsinh" title="torch.Tensor.arcsinh"><code class="xref py py-meth docutils literal notranslate"><span class="pre">arcsinh()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.size">
 <code class="sig-name descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; torch.Size<a class="headerlink" href="#torch.Tensor.size" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the size of the <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code> tensor. The returned value is a subclass of
@@ -3777,18 +4022,25 @@ the particular dimension <a class="reference internal" href="#torch.Tensor.dim" 
 <dl class="method">
 <dt id="torch.Tensor.sub">
 <code class="sig-name descname">sub</code><span class="sig-paren">(</span><em class="sig-param">other</em>, <em class="sig-param">*</em>, <em class="sig-param">alpha=1</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.sub" title="Permalink to this definition">¶</a></dt>
-<dd><p>Subtracts a scalar or tensor from <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code> tensor. If both <code class="xref py py-attr docutils literal notranslate"><span class="pre">alpha</span></code>
-and <code class="xref py py-attr docutils literal notranslate"><span class="pre">other</span></code> are specified, each element of <code class="xref py py-attr docutils literal notranslate"><span class="pre">other</span></code> is scaled by
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">alpha</span></code> before being used.</p>
-<p>When <code class="xref py py-attr docutils literal notranslate"><span class="pre">other</span></code> is a tensor, the shape of <code class="xref py py-attr docutils literal notranslate"><span class="pre">other</span></code> must be
-<a class="reference internal" href="notes/broadcasting.html#broadcasting-semantics"><span class="std std-ref">broadcastable</span></a> with the shape of the underlying
-tensor.</p>
+<dd><p>See <a class="reference internal" href="generated/torch.sub.html#torch.sub" title="torch.sub"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.sub()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="torch.Tensor.sub_">
 <code class="sig-name descname">sub_</code><span class="sig-paren">(</span><em class="sig-param">other</em>, <em class="sig-param">*</em>, <em class="sig-param">alpha=1</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.sub_" title="Permalink to this definition">¶</a></dt>
 <dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.sub" title="torch.Tensor.sub"><code class="xref py py-meth docutils literal notranslate"><span class="pre">sub()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.subtract">
+<code class="sig-name descname">subtract</code><span class="sig-paren">(</span><em class="sig-param">other</em>, <em class="sig-param">*</em>, <em class="sig-param">alpha=1</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.subtract" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.subtract.html#torch.subtract" title="torch.subtract"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.subtract()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.subtract_">
+<code class="sig-name descname">subtract_</code><span class="sig-paren">(</span><em class="sig-param">other</em>, <em class="sig-param">*</em>, <em class="sig-param">alpha=1</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.subtract_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.subtract" title="torch.Tensor.subtract"><code class="xref py py-meth docutils literal notranslate"><span class="pre">subtract()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -3952,8 +4204,20 @@ already matches the desired conversion.</p>
 
 <dl class="method">
 <dt id="torch.Tensor.atanh_">
-<code class="sig-name descname">atanh_</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torch.Tensor.atanh_" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">atanh_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.atanh_" title="Permalink to this definition">¶</a></dt>
 <dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.atanh" title="torch.Tensor.atanh"><code class="xref py py-meth docutils literal notranslate"><span class="pre">atanh()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.arctanh">
+<code class="sig-name descname">arctanh</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.arctanh" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="generated/torch.arctanh.html#torch.arctanh" title="torch.arctanh"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.arctanh()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="torch.Tensor.arctanh_">
+<code class="sig-name descname">arctanh_</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.arctanh_" title="Permalink to this definition">¶</a></dt>
+<dd><p>In-place version of <a class="reference internal" href="#torch.Tensor.arctanh" title="torch.Tensor.arctanh"><code class="xref py py-meth docutils literal notranslate"><span class="pre">arctanh()</span></code></a></p>
 </dd></dl>
 
 <dl class="method">
@@ -4166,9 +4430,9 @@ dimension <code class="xref py py-attr docutils literal notranslate"><span class
 <dd><p>Fills <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code> tensor with numbers sampled from the continuous uniform
 distribution:</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mtext>to</mtext><mo>−</mo><mtext>from</mtext></mrow></mfrac></mrow><annotation encoding="application/x-tex">P(x) = \dfrac{1}{\text{to} - \text{from}}
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mtext>to</mtext><mo>−</mo><mtext>from</mtext></mrow></mfrac></mrow><annotation encoding="application/x-tex">P(x) = \dfrac{1}{\text{to} - \text{from}}
 
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.09077em;vertical-align:-0.7693300000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">to</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord text"><span class="mord">from</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693300000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.09077em;vertical-align:-0.7693300000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">to</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord text"><span class="mord">from</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693300000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
 
 </div></dd></dl>
 
@@ -4219,6 +4483,13 @@ error.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="torch.Tensor.vdot">
+<code class="sig-name descname">vdot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torch.Tensor.vdot" title="Permalink to this definition">¶</a></dt>
+<dd><p>dot(other) -&gt; Tensor</p>
+<p>See <a class="reference internal" href="generated/torch.vdot.html#torch.vdot" title="torch.vdot"><code class="xref py py-func docutils literal notranslate"><span class="pre">torch.vdot()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="torch.Tensor.view">
 <code class="sig-name descname">view</code><span class="sig-paren">(</span><em class="sig-param">*shape</em><span class="sig-paren">)</span> &#x2192; Tensor<a class="headerlink" href="#torch.Tensor.view" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a new tensor with the same data as the <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code> tensor but of a
@@ -4227,14 +4498,14 @@ different <code class="xref py py-attr docutils literal notranslate"><span class
 of elements, but may have a different size. For a tensor to be viewed, the new
 view size must be compatible with its original size and stride, i.e., each new
 view dimension must either be a subspace of an original dimension, or only span
-across original dimensions <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo separator="true">,</mo><mi>d</mi><mo>+</mo><mn>1</mn><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><mi>d</mi><mo>+</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">d, d+1, \dots, d+k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">d</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>
+across original dimensions <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo separator="true">,</mo><mi>d</mi><mo>+</mo><mn>1</mn><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><mi>d</mi><mo>+</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">d, d+1, \dots, d+k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">d</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>
 
 </span> that satisfy the following
-contiguity-like condition that <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>i</mi><mo>=</mo><mi>d</mi><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><mi>d</mi><mo>+</mo><mi>k</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\forall i = d, \dots, d+k-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">∀</span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">d</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>
+contiguity-like condition that <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>i</mi><mo>=</mo><mi>d</mi><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><mi>d</mi><mo>+</mo><mi>k</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\forall i = d, \dots, d+k-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">∀</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">d</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>
 
 </span>,</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>stride</mtext><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>stride</mtext><mo stretchy="false">[</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="false">]</mo><mo>×</mo><mtext>size</mtext><mo stretchy="false">[</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{stride}[i] = \text{stride}[i+1] \times \text{size}[i+1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">stride</span></span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">stride</span></span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">size</span></span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span></span>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>stride</mtext><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>stride</mtext><mo stretchy="false">[</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="false">]</mo><mo>×</mo><mtext>size</mtext><mo stretchy="false">[</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{stride}[i] = \text{stride}[i+1] \times \text{size}[i+1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">stride</span></span><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">stride</span></span><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">size</span></span><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span></span>
 
 </div><p>Otherwise, it will not be possible to view <code class="xref py py-attr docutils literal notranslate"><span class="pre">self</span></code> tensor as <code class="xref py py-attr docutils literal notranslate"><span class="pre">shape</span></code>
 without copying it (e.g., via <a class="reference internal" href="#torch.Tensor.contiguous" title="torch.Tensor.contiguous"><code class="xref py py-meth docutils literal notranslate"><span class="pre">contiguous()</span></code></a>). When it is unclear whether a

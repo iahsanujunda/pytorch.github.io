@@ -159,7 +159,7 @@
               
               
                 <div class="version">
-                  <a href='http://pytorch.org/docs/versions.html'>1.7.0a0+fa9ae67 &#x25BC</a>
+                  <a href='http://pytorch.org/docs/versions.html'>1.7.0a0+f253c20 &#x25BC</a>
                 </div>
               
             
@@ -228,9 +228,11 @@
 <li class="toctree-l1"><a class="reference internal" href="amp.html">torch.cuda.amp</a></li>
 <li class="toctree-l1"><a class="reference internal" href="distributed.html">torch.distributed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="distributions.html">torch.distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fft.html">torch.fft</a></li>
 <li class="toctree-l1"><a class="reference internal" href="futures.html">torch.futures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hub.html">torch.hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jit.html">torch.jit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linalg.html">torch.linalg</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nn.init.html">torch.nn.init</a></li>
 <li class="toctree-l1"><a class="reference internal" href="onnx.html">torch.onnx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="optim.html">torch.optim</a></li>
@@ -959,7 +961,7 @@ in other threads.</p>
 
 <dl class="class">
 <dt id="torch.autograd.set_grad_enabled">
-<em class="property">class </em><code class="sig-prename descclassname">torch.autograd.</code><code class="sig-name descname">set_grad_enabled</code><span class="sig-paren">(</span><em class="sig-param">mode</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/autograd/grad_mode.html#set_grad_enabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.autograd.set_grad_enabled" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">torch.autograd.</code><code class="sig-name descname">set_grad_enabled</code><span class="sig-paren">(</span><em class="sig-param">mode: bool</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/autograd/grad_mode.html#set_grad_enabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.autograd.set_grad_enabled" title="Permalink to this definition">¶</a></dt>
 <dd><p>Context-manager that sets gradient calculation to on or off.</p>
 <p><code class="docutils literal notranslate"><span class="pre">set_grad_enabled</span></code> will enable or disable grads based on its argument <code class="xref py py-attr docutils literal notranslate"><span class="pre">mode</span></code>.
 It can be used as a context-manager or as a function.</p>
@@ -1351,6 +1353,15 @@ they weren’t used in any in-place operation that modified their content.</p>
 <p>Arguments can also be <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="torch.autograd.function._ContextMethodMixin.set_materialize_grads">
+<code class="sig-name descname">set_materialize_grads</code><span class="sig-paren">(</span><em class="sig-param">value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/autograd/function.html#_ContextMethodMixin.set_materialize_grads"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.autograd.function._ContextMethodMixin.set_materialize_grads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether to materialize output grad tensors. Default is true.</p>
+<p><strong>This should be called only from inside the</strong> <code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code> <strong>method</strong></p>
+<p>If true, undefined output grad tensors will be expanded to tensors full
+of zeros prior to calling the <code class="xref py py-func docutils literal notranslate"><span class="pre">backward()</span></code> method.</p>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -1358,7 +1369,7 @@ they weren’t used in any in-place operation that modified their content.</p>
 <span id="grad-check"></span><h2>Numerical gradient checking<a class="headerlink" href="#numerical-gradient-checking" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="torch.autograd.gradcheck">
-<code class="sig-prename descclassname">torch.autograd.</code><code class="sig-name descname">gradcheck</code><span class="sig-paren">(</span><em class="sig-param">func: Callable[..., Union[torch.Tensor, Sequence[torch.Tensor]]], inputs: Union[torch.Tensor, Sequence[torch.Tensor]], eps: float = 1e-06, atol: float = 1e-05, rtol: float = 0.001, raise_exception: bool = True, check_sparse_nnz: bool = False, nondet_tol: float = 0.0, check_undefined_grad: bool = True</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/torch/autograd/gradcheck.html#gradcheck"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.autograd.gradcheck" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">torch.autograd.</code><code class="sig-name descname">gradcheck</code><span class="sig-paren">(</span><em class="sig-param">func: Callable[..., Union[torch.Tensor, Sequence[torch.Tensor]]], inputs: Union[torch.Tensor, Sequence[torch.Tensor]], eps: float = 1e-06, atol: float = 1e-05, rtol: float = 0.001, raise_exception: bool = True, check_sparse_nnz: bool = False, nondet_tol: float = 0.0, check_undefined_grad: bool = True, check_grad_dtypes: bool = False</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/torch/autograd/gradcheck.html#gradcheck"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.autograd.gradcheck" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check gradients computed via small finite differences against analytical
 gradients w.r.t. tensors in <code class="xref py py-attr docutils literal notranslate"><span class="pre">inputs</span></code> that are of floating point or complex type
 and with <code class="docutils literal notranslate"><span class="pre">requires_grad=True</span></code>.</p>
@@ -1406,7 +1417,7 @@ are supported and treated as zeros</p></li>
 
 <dl class="function">
 <dt id="torch.autograd.gradgradcheck">
-<code class="sig-prename descclassname">torch.autograd.</code><code class="sig-name descname">gradgradcheck</code><span class="sig-paren">(</span><em class="sig-param">func: Callable[..., Union[torch.Tensor, Sequence[torch.Tensor]]], inputs: Union[torch.Tensor, Sequence[torch.Tensor]], grad_outputs: Union[torch.Tensor, Sequence[torch.Tensor], None] = None, eps: float = 1e-06, atol: float = 1e-05, rtol: float = 0.001, gen_non_contig_grad_outputs: bool = False, raise_exception: bool = True, nondet_tol: float = 0.0, check_undefined_grad: bool = True</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/torch/autograd/gradcheck.html#gradgradcheck"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.autograd.gradgradcheck" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">torch.autograd.</code><code class="sig-name descname">gradgradcheck</code><span class="sig-paren">(</span><em class="sig-param">func: Callable[..., Union[torch.Tensor, Sequence[torch.Tensor]]], inputs: Union[torch.Tensor, Sequence[torch.Tensor]], grad_outputs: Union[torch.Tensor, Sequence[torch.Tensor], None] = None, eps: float = 1e-06, atol: float = 1e-05, rtol: float = 0.001, gen_non_contig_grad_outputs: bool = False, raise_exception: bool = True, nondet_tol: float = 0.0, check_undefined_grad: bool = True, check_grad_dtypes: bool = False</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/torch/autograd/gradcheck.html#gradgradcheck"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.autograd.gradgradcheck" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check gradients of gradients computed via small finite differences
 against analytical gradients w.r.t. tensors in <code class="xref py py-attr docutils literal notranslate"><span class="pre">inputs</span></code> and
 <code class="xref py py-attr docutils literal notranslate"><span class="pre">grad_outputs</span></code> that are of floating point or complex type and with
@@ -1555,15 +1566,22 @@ all self times across all the events.</p>
 
 <dl class="method">
 <dt id="torch.autograd.profiler.profile.table">
-<code class="sig-name descname">table</code><span class="sig-paren">(</span><em class="sig-param">sort_by=None</em>, <em class="sig-param">row_limit=100</em>, <em class="sig-param">header=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/autograd/profiler.html#profile.table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.autograd.profiler.profile.table" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">table</code><span class="sig-paren">(</span><em class="sig-param">sort_by=None</em>, <em class="sig-param">row_limit=100</em>, <em class="sig-param">header=None</em>, <em class="sig-param">top_level_events_only=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/torch/autograd/profiler.html#profile.table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch.autograd.profiler.profile.table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prints an EventList as a nicely formatted table.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>sort_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em>, </em><em>optional</em>) – Attribute used to sort entries. By default
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sort_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em>, </em><em>optional</em>) – Attribute used to sort entries. By default
 they are printed in the same order as they were registered.
 Valid keys include: <code class="docutils literal notranslate"><span class="pre">cpu_time</span></code>, <code class="docutils literal notranslate"><span class="pre">cuda_time</span></code>, <code class="docutils literal notranslate"><span class="pre">cpu_time_total</span></code>,
 <code class="docutils literal notranslate"><span class="pre">cuda_time_total</span></code>, <code class="docutils literal notranslate"><span class="pre">cpu_memory_usage</span></code>, <code class="docutils literal notranslate"><span class="pre">cuda_memory_usage</span></code>,
-<code class="docutils literal notranslate"><span class="pre">self_cpu_memory_usage</span></code>, <code class="docutils literal notranslate"><span class="pre">self_cuda_memory_usage</span></code>, <code class="docutils literal notranslate"><span class="pre">count</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">self_cpu_memory_usage</span></code>, <code class="docutils literal notranslate"><span class="pre">self_cuda_memory_usage</span></code>, <code class="docutils literal notranslate"><span class="pre">count</span></code>.</p></li>
+<li><p><strong>top_level_events_only</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a><em>, </em><em>optional</em>) – Boolean flag to determine the
+selection of events to display. If true, the profiler will only
+display events at top level like top-level invocation of python
+<cite>lstm</cite>, python <cite>add</cite> or other functions, nested events like low-level
+cpu/cuda ops events are omitted for profiler result readability.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>A string containing the table.</p>
